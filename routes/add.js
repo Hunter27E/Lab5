@@ -4,8 +4,8 @@ exports.addFriend = function (request, response) {
 	// Your code goes here
 
 	var newFriend = {
-		name: request.params.name,
-		description: request.params.description,
+		name: request.query.name,
+		description: request.query.description,
 		imageURL: 'http://lorempixel.com/400/400/people',
 	};
 

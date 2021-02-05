@@ -41,8 +41,16 @@
 	      		<label for="description">Description:</label>
 	      		<input type="text" class="form-control" id="description" placeholder="Description" name="description">
 	    	</div>
+			<!-- automatically creates url request as /add?name=<name>&description=<description -->
 	    	<input type="submit" id="submitBtn" class="btn btn-default" value="Add the friend"></input>
 		</form>
 	</div>
 </body>
 </html>
+
+<!--
+	1. submitting form will create default style url, clicking link goes to href url
+	2. app.js handles the route (require and get statements)
+	3. goes to the proper routes/js file based on request
+	4. js file determines what handlebars to render and with what info
+-->
